@@ -1,4 +1,4 @@
-package my.hazelcaststudy.gettingstarted;
+package my.hazelcaststudy.lock;
 
 import com.hazelcast.config.Config;
 import com.hazelcast.core.Hazelcast;
