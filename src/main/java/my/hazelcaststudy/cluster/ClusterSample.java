@@ -20,12 +20,12 @@ public class ClusterSample {
 
 						System.out.println("========================================");
 						Member localMember = cluster.getLocalMember();
-						System.out.println("my inetAddress= " + localMember.getInetAddress());
+						System.out.println("my inetAddress= " + localMember.getInetSocketAddress().getAddress());
 
 						Set<Member> members = cluster.getMembers();
 						for (Member member : members) {
 							System.out.println("isLocalMember " + member.localMember());
-							System.out.println("member.inetaddress " + member.getInetAddress());
+							System.out.println("member.inetaddress " + member.getInetSocketAddress().getAddress());
 							System.out.println("member.port " + member.getPort());
 						}
 						System.out.println("========================================");
